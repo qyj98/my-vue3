@@ -2,7 +2,7 @@
 
 const LOCAL_KEY = "todomvc" //!保存到localstorage中的键值对键名
 
-// 生成一个唯一的任务id 时间戳+4位随机数 便于v-for
+// 生成一个唯一的任务id 时间戳+4位随机数 便于v-for循环
 export function generateId() {
     return Date.now() + Math.random().toString(16).substr(2, 4)
 }
